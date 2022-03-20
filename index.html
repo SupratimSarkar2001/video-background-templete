@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <!-- cdn of typed.js go to this website to see more -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="hero">
+      <video autoplay loop muted plays-inline class="backvideo">
+        <source src="video.mp4" type="video/mp4" />
+      </video>
+      <div class="nav">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Destinations</li>
+          <li>Facility</li>
+        </ul>
+      </div>
+      <div class="main">
+        <h1>I Love my <span class="india">India</span></h1>
+        <h3>Do Checkout <a href="#" class="auto-type"></a>and More.</h3>
+      </div>
+    </div>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: [
+          "Kolkata",
+          "Delhi",
+          "Chennai",
+          "Bengaluru",
+          "Jamm and Kashmir",
+        ],
+        typeSpeed: 150,
+        backspeed: 150,
+        smartBackspace: true,
+        loop: true,
+        // fadeOut: true,
+      });
+    </script>
+  </body>
+</html>
